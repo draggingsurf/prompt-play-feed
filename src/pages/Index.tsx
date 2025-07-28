@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { GameTabs } from "@/components/GameTabs";
 import { GameSection } from "@/components/GameSection";
+import { FilterSection } from "@/components/FilterSection";
 
 const TABS = ["Latest", "Trending", "Hot", "Most Liked"];
 
@@ -264,6 +265,11 @@ const SAMPLE_GAMES = {
 
 const Index = () => {
   const [activeTab, setActiveTab] = useState("Latest");
+  const [filters, setFilters] = useState({
+    genre: [] as string[],
+    status: [] as string[],
+    tags: [] as string[]
+  });
 
   return (
     <div className="min-h-screen bg-background">
@@ -280,6 +286,9 @@ const Index = () => {
 
       {/* Tabs Navigation */}
       <GameTabs tabs={TABS} activeTab={activeTab} onTabChange={setActiveTab} />
+
+      {/* Filter Section */}
+      <FilterSection onFiltersChange={setFilters} />
 
       {/* Game Sections */}
       <div className="max-w-7xl mx-auto px-4 pb-16">

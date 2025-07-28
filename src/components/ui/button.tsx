@@ -19,6 +19,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         game: "bg-game-yellow text-game-yellow-foreground hover:bg-game-yellow/90 font-semibold shadow-md hover:shadow-lg transition-all duration-200",
+        play: "bg-game-green text-game-green-foreground hover:bg-game-green/90 hover:scale-105 font-semibold shadow-md hover:shadow-[0_0_20px_hsl(var(--game-green)/0.4)] transition-all duration-200",
       },
       size: {
         default: "h-10 px-4 py-2",

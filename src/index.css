@@ -42,6 +42,8 @@ All colors MUST be HSL.
     /* GameTerminal specific tokens */
     --game-yellow: 51 100% 50%; /* #FFD600 */
     --game-yellow-foreground: 220 13% 7%;
+    --game-green: 141 100% 66%; /* #00e676 */
+    --game-green-foreground: 220 13% 7%;
     --neon-glow: 86 100% 65%; /* #8efd47 */
     
     /* Gradients */

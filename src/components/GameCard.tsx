@@ -62,7 +62,7 @@ export const GameCard = ({ title, description, badges, tags, featured, genre }: 
             <Info className="w-3 h-3 mr-1" />
             Details
           </Button>
-          <Button variant="game" size="sm" className="flex-1">
+          <Button variant="play" size="sm" className="flex-1">
             <Play className="w-3 h-3 mr-1" />
             Play Now
           </Button>

@@ -66,6 +66,10 @@ export default {
 					DEFAULT: 'hsl(var(--game-yellow))',
 					foreground: 'hsl(var(--game-yellow-foreground))'
 				},
+				'game-green': {
+					DEFAULT: 'hsl(var(--game-green))',
+					foreground: 'hsl(var(--game-green-foreground))'
+				},
 				'neon-glow': 'hsl(var(--neon-glow))'
 			},
 			backgroundImage: {
